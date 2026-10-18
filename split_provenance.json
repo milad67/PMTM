@@ -11,7 +11,9 @@
       "source_commit_sha": "03a0b28ae03ad1a7dea5fb874c7b47c1439caa34",
       "source_blob_sha": "180bf56d0d750f3188c516b587adf5104d0e9364",
       "source_url": "https://github.com/Jun-Jie-Shi/M2FTrans/blob/03a0b28ae03ad1a7dea5fb874c7b47c1439caa34/BraTS/BRATS2020_Training_none_npy/train.txt",
-      "transformation": "Extract nonempty subject identifier lines."
+      "transformation": "Extract nonempty subject identifier lines.",
+      "released_original_path": "splits/2020/train.txt",
+      "author_supplied_file_matches_source_blob": true
     },
     {
       "dataset": "BraTS2020",
@@ -22,7 +24,9 @@
       "source_commit_sha": "03a0b28ae03ad1a7dea5fb874c7b47c1439caa34",
       "source_blob_sha": "3176c3dc06f4d1281b8ac3d34b848a060e7b3cb6",
       "source_url": "https://github.com/Jun-Jie-Shi/M2FTrans/blob/03a0b28ae03ad1a7dea5fb874c7b47c1439caa34/BraTS/BRATS2020_Training_none_npy/val.txt",
-      "transformation": "Extract nonempty subject identifier lines."
+      "transformation": "Extract nonempty subject identifier lines.",
+      "released_original_path": "splits/2020/val.txt",
+      "author_supplied_file_matches_source_blob": true
     },
     {
       "dataset": "BraTS2020",
@@ -33,7 +37,9 @@
       "source_commit_sha": "03a0b28ae03ad1a7dea5fb874c7b47c1439caa34",
       "source_blob_sha": "06b162a44ed109bd6d6ce7fb25bc804ee738755d",
       "source_url": "https://github.com/Jun-Jie-Shi/M2FTrans/blob/03a0b28ae03ad1a7dea5fb874c7b47c1439caa34/BraTS/BRATS2020_Training_none_npy/test.txt",
-      "transformation": "Extract nonempty subject identifier lines."
+      "transformation": "Extract nonempty subject identifier lines.",
+      "released_original_path": "splits/2020/test.txt",
+      "author_supplied_file_matches_source_blob": true
     },
     {
       "dataset": "BraTS2023_GLI",
@@ -44,7 +50,9 @@
       "source_commit_sha": "b2f7f275db398373b063961f32af7b8b6fb7bac6",
       "source_blob_sha": "f6072905996489f91eab8484b59fe81a27b6a2e3",
       "source_url": "https://github.com/AImageLab-zip/MiMoSe/blob/b2f7f275db398373b063961f32af7b8b6fb7bac6/IMFuse/datalist/train.txt",
-      "transformation": "Extract nonempty subject identifier lines."
+      "transformation": "Extract nonempty subject identifier lines.",
+      "released_original_path": "splits/2023/train.txt",
+      "author_supplied_file_matches_source_blob": true
     },
     {
       "dataset": "BraTS2023_GLI",
@@ -55,7 +63,9 @@
       "source_commit_sha": "b2f7f275db398373b063961f32af7b8b6fb7bac6",
       "source_blob_sha": "cc2d56e867c63b101207265ce4951c049e77bf65",
       "source_url": "https://github.com/AImageLab-zip/MiMoSe/blob/b2f7f275db398373b063961f32af7b8b6fb7bac6/IMFuse/datalist/val15splits.csv",
-      "transformation": "Extract the case column; omit the supplied mask column."
+      "transformation": "Extract the case column; omit the supplied mask column.",
+      "released_original_path": "splits/2023/val15splits.csv",
+      "author_supplied_file_matches_source_blob": true
     },
     {
       "dataset": "BraTS2023_GLI",
@@ -66,7 +76,9 @@
       "source_commit_sha": "b2f7f275db398373b063961f32af7b8b6fb7bac6",
       "source_blob_sha": "cef9f011af7633d59140dc479abb8e90bd9eaf11",
       "source_url": "https://github.com/AImageLab-zip/MiMoSe/blob/b2f7f275db398373b063961f32af7b8b6fb7bac6/IMFuse/datalist/test15splits.csv",
-      "transformation": "Extract the case column; omit the supplied mask column."
+      "transformation": "Extract the case column; omit the supplied mask column.",
+      "released_original_path": "splits/2023/test15splits.csv",
+      "author_supplied_file_matches_source_blob": true
     }
   ],
   "checks": {
@@ -75,5 +87,12 @@
     "expected_split_counts_match": true,
     "no_within_dataset_subject_overlap": true
   },
-  "per_subject_results": "NOT AVAILABLE: the accompanying CSV is a header-only template; it contains no measured scores."
+  "per_subject_results": "NOT AVAILABLE: the accompanying CSV is a header-only template; it contains no measured scores.",
+  "author_supplied_file_verification": {
+    "checked_date": "2026-10-18",
+    "checked_files": 6,
+    "all_files_match_pinned_public_source_bytes": true,
+    "consolidated_subject_splits_match_supplied_files": true,
+    "scope": "The authors supplied BraTS2020 and BraTS2023 GLI subject lists. No BraTS2018 lists, model source code, or measured per-subject evaluation outputs were present in the supplied folder."
+  }
 }
