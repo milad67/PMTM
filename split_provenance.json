@@ -1,0 +1,79 @@
+{
+  "prepared_date": "2026-10-18",
+  "scope": "Public BraTS2020 and BraTS2023 GLI subject lists identified by the manuscript authors as their splits. BraTS2018 identifiers have not been supplied.",
+  "sources": [
+    {
+      "dataset": "BraTS2020",
+      "split": "train",
+      "count": 219,
+      "repository": "Jun-Jie-Shi/M2FTrans",
+      "source_path": "BraTS/BRATS2020_Training_none_npy/train.txt",
+      "source_commit_sha": "03a0b28ae03ad1a7dea5fb874c7b47c1439caa34",
+      "source_blob_sha": "180bf56d0d750f3188c516b587adf5104d0e9364",
+      "source_url": "https://github.com/Jun-Jie-Shi/M2FTrans/blob/03a0b28ae03ad1a7dea5fb874c7b47c1439caa34/BraTS/BRATS2020_Training_none_npy/train.txt",
+      "transformation": "Extract nonempty subject identifier lines."
+    },
+    {
+      "dataset": "BraTS2020",
+      "split": "validation",
+      "count": 50,
+      "repository": "Jun-Jie-Shi/M2FTrans",
+      "source_path": "BraTS/BRATS2020_Training_none_npy/val.txt",
+      "source_commit_sha": "03a0b28ae03ad1a7dea5fb874c7b47c1439caa34",
+      "source_blob_sha": "3176c3dc06f4d1281b8ac3d34b848a060e7b3cb6",
+      "source_url": "https://github.com/Jun-Jie-Shi/M2FTrans/blob/03a0b28ae03ad1a7dea5fb874c7b47c1439caa34/BraTS/BRATS2020_Training_none_npy/val.txt",
+      "transformation": "Extract nonempty subject identifier lines."
+    },
+    {
+      "dataset": "BraTS2020",
+      "split": "test",
+      "count": 100,
+      "repository": "Jun-Jie-Shi/M2FTrans",
+      "source_path": "BraTS/BRATS2020_Training_none_npy/test.txt",
+      "source_commit_sha": "03a0b28ae03ad1a7dea5fb874c7b47c1439caa34",
+      "source_blob_sha": "06b162a44ed109bd6d6ce7fb25bc804ee738755d",
+      "source_url": "https://github.com/Jun-Jie-Shi/M2FTrans/blob/03a0b28ae03ad1a7dea5fb874c7b47c1439caa34/BraTS/BRATS2020_Training_none_npy/test.txt",
+      "transformation": "Extract nonempty subject identifier lines."
+    },
+    {
+      "dataset": "BraTS2023_GLI",
+      "split": "train",
+      "count": 875,
+      "repository": "AImageLab-zip/MiMoSe",
+      "source_path": "IMFuse/datalist/train.txt",
+      "source_commit_sha": "b2f7f275db398373b063961f32af7b8b6fb7bac6",
+      "source_blob_sha": "f6072905996489f91eab8484b59fe81a27b6a2e3",
+      "source_url": "https://github.com/AImageLab-zip/MiMoSe/blob/b2f7f275db398373b063961f32af7b8b6fb7bac6/IMFuse/datalist/train.txt",
+      "transformation": "Extract nonempty subject identifier lines."
+    },
+    {
+      "dataset": "BraTS2023_GLI",
+      "split": "validation",
+      "count": 125,
+      "repository": "AImageLab-zip/MiMoSe",
+      "source_path": "IMFuse/datalist/val15splits.csv",
+      "source_commit_sha": "b2f7f275db398373b063961f32af7b8b6fb7bac6",
+      "source_blob_sha": "cc2d56e867c63b101207265ce4951c049e77bf65",
+      "source_url": "https://github.com/AImageLab-zip/MiMoSe/blob/b2f7f275db398373b063961f32af7b8b6fb7bac6/IMFuse/datalist/val15splits.csv",
+      "transformation": "Extract the case column; omit the supplied mask column."
+    },
+    {
+      "dataset": "BraTS2023_GLI",
+      "split": "test",
+      "count": 251,
+      "repository": "AImageLab-zip/MiMoSe",
+      "source_path": "IMFuse/datalist/test15splits.csv",
+      "source_commit_sha": "b2f7f275db398373b063961f32af7b8b6fb7bac6",
+      "source_blob_sha": "cef9f011af7633d59140dc479abb8e90bd9eaf11",
+      "source_url": "https://github.com/AImageLab-zip/MiMoSe/blob/b2f7f275db398373b063961f32af7b8b6fb7bac6/IMFuse/datalist/test15splits.csv",
+      "transformation": "Extract the case column; omit the supplied mask column."
+    }
+  ],
+  "checks": {
+    "subject_rows": 1620,
+    "source_blob_hashes_match": true,
+    "expected_split_counts_match": true,
+    "no_within_dataset_subject_overlap": true
+  },
+  "per_subject_results": "NOT AVAILABLE: the accompanying CSV is a header-only template; it contains no measured scores."
+}
