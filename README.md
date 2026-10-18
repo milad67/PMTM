@@ -6,7 +6,7 @@ This repository accompanies the PMTM manuscript.
 
 ## Release status
 
-- **BraTS2020 and BraTS2023 GLI split identifiers:** available as the [original supplied files](splits) and in [subject_splits.csv](subject_splits.csv).
+- **BraTS2020 and BraTS2023 GLI split identifiers:** available as [plain-text subject lists](splits) and in [subject_splits.csv](subject_splits.csv).
 - **BraTS2018 split identifiers:** not yet uploaded. The study uses its own 205/23/57 training/validation/test partition; this file does not substitute a published split for it.
 - **PMTM source code:** not yet uploaded.
 - **Measured per-subject evaluation results:** not yet uploaded. [per_subject_results_TEMPLATE.csv](per_subject_results_TEMPLATE.csv) is a header-only format template, not evaluation data.
@@ -22,7 +22,7 @@ This repository accompanies the PMTM manuscript.
 
 The BraTS2020 lists originate from the [official M2FTrans repository](https://github.com/Jun-Jie-Shi/M2FTrans/tree/main/BraTS/BRATS2020_Training_none_npy). The BraTS2023 GLI lists originate from the [public IM-Fuse datalists in MiMoSe](https://github.com/AImageLab-zip/MiMoSe/tree/main/IMFuse/datalist). For the BraTS2023 validation/test CSV files, only the `case` column is used to extract subject membership; the supplied `mask` column is not used to infer PMTM evaluation settings or scores.
 
-See [split_provenance.json](split_provenance.json) for the source paths, pinned source commits, blob hashes, transformations, and validation checks. All six subject-list files supplied by the manuscript authors were checked byte for byte against the pinned public source files and match exactly. Their subject membership and ordering also match the consolidated CSV. The originals are provided in [splits/2020](splits/2020) and [splits/2023](splits/2023), including the original BraTS2023 CSV mask columns.
+See [split_provenance.json](split_provenance.json) for the source paths, pinned source commits, blob hashes, transformations, and validation checks. All six original subject-list files supplied by the manuscript authors matched the pinned public source files byte for byte. The released subject lists are available as `train.txt`, `val.txt`, and `test.txt` in [splits/2020](splits/2020) and [splits/2023](splits/2023), with one subject identifier per line. For BraTS2023 validation and test, only the original CSV `case` column is retained; the header and modality-mask column are removed. Subject membership and ordering are unchanged and match the consolidated CSV.
 
 ## Per-subject results template
 
