@@ -4,6 +4,10 @@
 
 This repository accompanies the PMTM manuscript.
 
+[![PMTM network overview, tumor-state update, and modality fusion](assets/pmtm_architecture.png)](assets/pmtm_architecture.pdf)
+
+[View the full-resolution architecture diagram (PDF)](assets/pmtm_architecture.pdf).
+
 ## Release status
 
 - **BraTS2020 and BraTS2023 GLI split identifiers:** available as [plain-text subject lists](splits) and in [subject_splits.csv](subject_splits.csv).
