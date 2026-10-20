@@ -13,7 +13,7 @@ This repository accompanies the PMTM manuscript.
 - **BraTS2020 and BraTS2023 GLI split identifiers:** available as [plain-text subject lists](splits) and in [subject_splits.csv](subject_splits.csv).
 - **BraTS2018 split identifiers:** not yet uploaded. The study uses its own 205/23/57 training/validation/test partition; this file does not substitute a published split for it.
 - **PMTM source code:** included in this repository. See [Training and evaluation](#training-and-evaluation) and [Training objective](TRAINING.md).
-- **Measured per-subject evaluation results:** not yet uploaded. [per_subject_results_TEMPLATE.csv](per_subject_results_TEMPLATE.csv) is a header-only format template, not evaluation data.
+- **Measured per-subject evaluation results:** not distributed with this repository and not planned for public release.
 
 ## Installation
 
@@ -98,7 +98,7 @@ See [split_provenance.json](split_provenance.json) for the source paths, pinned 
 
 ## Per-subject results template
 
-The template contains column names only. It has no subject rows or Dice scores. Populate it only from actual evaluation outputs:
+The header-only [template](per_subject_results_TEMPLATE.csv) is a formatting example for users' own evaluation outputs. It contains no measured scores and does not indicate a planned release of the authors' per-subject results. Populate it only from actual evaluation outputs:
 
 - One row per dataset, subject, method, and evaluated modality subset.
 - Use `0` or `1` for each modality-availability column. At least one modality must be available.
