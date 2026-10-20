@@ -4,6 +4,8 @@
 
 This repository accompanies the PMTM manuscript.
 
+[arXiv preprint](https://arxiv.org/abs/2610.26457) | [Paper PDF](https://arxiv.org/pdf/2610.26457)
+
 [![PMTM network overview, tumor-state update, and modality fusion](assets/pmtm_architecture.png)](assets/pmtm_architecture.pdf)
 
 [View the full-resolution architecture diagram (PDF)](assets/pmtm_architecture.pdf).
@@ -60,7 +62,15 @@ python scripts/run_experiment.py --dataset 2020 --datapath /path/to/processed --
 Remove `--print-command` to start training. The launcher supports `2018`,
 `2020`, and `2023`. All three configurations use `stage1234`, token mixing at
 all active stages, and equal semantic-supervision weights across the four
-stages. The full training objective is documented in [TRAINING.md](TRAINING.md).
+stages. The training objective is documented in [TRAINING.md](TRAINING.md).
+
+Consistency, cross-stage identity, and slot-diversity losses are optional
+regularizers controlled by `lambda_consistency`, `lambda_identity`, and
+`lambda_diversity`. Setting a coefficient to `0` disables that loss term.
+The supplied configurations enable these regularizers with weights `0.40`,
+`0.02`, and `0.005`, respectively. See [Optional regularizers](TRAINING.md#optional-regularizers)
+for their definitions and instructions for disabling them.
+
 The saved BraTS2020 run was resumed from an earlier checkpoint. To resume a
 run, supply `--resume /path/to/model_last.pth`; otherwise training starts from
 initialization. Checkpoints are not included in this source-code release.
@@ -111,3 +121,18 @@ The template must not be cited as released evaluation results. Dataset-level tab
 
 The original MRI data are not redistributed in this repository. Access to the BraTS datasets remains subject to the access procedures and terms of the respective data providers. The subject identifiers above are dataset identifiers, not patient names.
 
+## Citation
+
+If you use PMTM or this implementation, please cite the preprint:
+
+```bibtex
+@misc{rostamian2026pmtm,
+  title = {Progressive multi-scale tumor-state memory for incomplete multimodal brain tumor segmentation},
+  author = {Rostamian, Milad and Mohammadi, Mohammadreza and Soryani, Mohsen},
+  year = {2026},
+  eprint = {2610.26457},
+  archivePrefix = {arXiv},
+  primaryClass = {eess.IV},
+  url = {https://arxiv.org/abs/2610.26457}
+}
+```
